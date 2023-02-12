@@ -35,13 +35,13 @@ export default function Toolbar() {
                         width={50}
                         height={50}
                       />
-                      <div className="pl-2">
+                       <div className="pl-1 md:pl-2">
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <span className="text-xs md:text-xl font-extrabold text-green-600">
+                        <p className="text-xs md:text-xl font-extrabold text-green-600">
                           Department of Statistics
-                        </span>
+                        </p>
                       </div>
                     </Link>
                   </div>
@@ -92,13 +92,13 @@ export default function Toolbar() {
                       width={50}
                       height={50}
                     />
-                   <div className="pl-2">
+                   <div className="pl-1 md:pl-2">
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <span className="text-xs md:text-xl font-extrabold text-green-600">
+                        <p className="text-xs md:text-xl font-extrabold text-green-600">
                           Department of Statistics
-                        </span>
+                        </p>
                       </div>
                   </Link>
                   <div className="-mr-2">
