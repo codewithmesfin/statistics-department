@@ -39,7 +39,7 @@ export default function Toolbar() {
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <span className="text-sm md:text-xl font-extrabold text-green-600">
+                        <span className="text-xs md:text-xl font-extrabold text-green-600">
                           Department of Statistics
                         </span>
                       </div>
@@ -96,7 +96,7 @@ export default function Toolbar() {
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <span className="text-sm md:text-xl font-extrabold text-green-600">
+                        <span className="text-xs md:text-xl font-extrabold text-green-600">
                           Department of Statistics
                         </span>
                       </div>

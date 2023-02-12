@@ -65,9 +65,7 @@ export default function Index() {
                 </a>
               </div>
             </div>
-            <div
-              className="hidden ml-auto md:block w-1/2"
-            >
+            <div className="hidden ml-auto md:block w-1/2">
               <Carousel items={images} activeItemId={0} />
             </div>
           </div>
@@ -75,24 +73,27 @@ export default function Index() {
       </section>
 
       <section className="bg-gray-50">
-       <div className="max-w-7xl mx-auto py-10">
-       <div className="md:flex md:space-x-10 justify-between">
-          {items.map((x, i) => (
-            <div key={i}>
-              <div className="max-w-sm cursor-pointer bg-white h-full rounded-xl overflow-hidden shadow-xl border border-gray-100">
-                <div className="p-10">
-                <div className="font-bold text-xl mb-2">{x.title}</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Blanditiis commodi cum cupiditate ducimus, fugit harum id
-                  necessitatibus. <Link href="/asdfg"  className="text-green-600">Read more</Link>
-                </p>
+        <div className="max-w-7xl mx-auto py-10">
+          <div className="md:flex md:space-x-10 justify-between">
+            {items.map((x, i) => (
+              <div key={i} className="p-3 md:p-0">
+                <div className="max-w-sm cursor-pointer bg-white h-full rounded-xl overflow-hidden shadow-xl border border-gray-100">
+                  <div className="p-10">
+                    <div className="font-bold text-xl mb-2">{x.title}</div>
+                    <p className="text-gray-700 text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Blanditiis commodi cum cupiditate ducimus, fugit harum id
+                      necessitatibus.{" "}
+                      <Link href="/asdfg" className="text-green-600">
+                        Read more
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-       </div>
       </section>
 
       <section>
@@ -107,7 +108,7 @@ export default function Index() {
                 width={400}
               />
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 p-3 md:p-0">
               <h1 className="text-3xl py-3 font-extrabold">About us</h1>
               <p className="mt-2 text-sm text-gray-500 md:text-base">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
