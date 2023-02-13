@@ -1,4 +1,5 @@
 import Carousel from "@/components/carousel/carousel";
+import Icon from "@/components/Icon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,19 +14,26 @@ export default function Index() {
 
   const items = [
     {
-      title: "150 Staff Members",
-      subtitle: "",
+      title: "The 50 th Anniversary",
+      subtitle: `Modern robust statistical methods for sound decision-making and the expanding boundaries of statistics.`,
       img: "",
+      href:"conference"
     },
     {
       title: "20000+ Students Graduated",
-      subtitle: "",
+      subtitle: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Blanditiis commodi cum cupiditate ducimus, fugit harum id
+      necessitatibus.`,
       img: "",
+      href:"two"
     },
     {
       title: "50+ years of experience",
-      subtitle: "",
+      subtitle: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Blanditiis commodi cum cupiditate ducimus, fugit harum id
+      necessitatibus.`,
       img: "",
+      href:"three"
     },
   ];
 
@@ -51,18 +59,18 @@ export default function Index() {
                 voluptates. Cumque debitis dignissimos id quam vel!
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
-                <a
+                <Link
                   className="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
                   href="#"
                 >
                   Get Started
-                </a>
-                <a
+                </Link>
+                <Link
                   className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
                   href="#"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="hidden ml-auto md:block w-1/2">
@@ -76,21 +84,19 @@ export default function Index() {
         <div className="max-w-7xl mx-auto py-10">
           <div className="md:flex md:space-x-10 justify-between">
             {items.map((x, i) => (
-              <div key={i} className="p-3 md:p-0">
-                <div className="max-w-sm cursor-pointer bg-white h-full rounded-xl overflow-hidden shadow-xl border border-gray-100">
+              <Link href={x.href} key={i} className="p-3 md:p-0">
+                <div className="max-w-sm cursor-pointer bg-white h-full rounded-xl overflow-hidden shadow-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-300">
                   <div className="p-10">
                     <div className="font-bold text-xl mb-2">{x.title}</div>
                     <p className="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Blanditiis commodi cum cupiditate ducimus, fugit harum id
-                      necessitatibus.{" "}
-                      <Link href="/asdfg" className="text-green-600">
+                      {x.subtitle}
+                      <span className="pl-2 text-green-600">
                         Read more
-                      </Link>
+                      </span>
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -8,7 +8,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About us", href: "/about" },
   { name: "Membership", href: "/membership" },
-  { name: "Congress", href: "/congress" },
+  { name: "Conference", href: "/conference" },
   { name: "Workshops", href: "/workshops" },
   { name: "Staff", href: "/staff" },
   { name: "Contact us", href: "/contact" },
