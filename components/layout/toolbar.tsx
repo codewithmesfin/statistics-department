@@ -27,7 +27,7 @@ export default function Toolbar() {
               >
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <Link href="/" className="flex md:space-x-2 items-center">
+                    <Link href="/" className="flex w-full space-x-2 items-center">
                       <Image
                         alt="Your Company"
                         className="h-16 sm:h-24 w-auto sm:h-24"
@@ -83,7 +83,7 @@ export default function Toolbar() {
                 <div className="flex items-center justify-between px-5 pt-4">
                   <Link
                     href="/"
-                    className="flex border-0 border-white md:space-x-2 items-center"
+                    className="flex w-full border-0 border-white space-x-2 items-center"
                   >
                     <Image
                       alt="Your Company"
