@@ -7,7 +7,7 @@ import { Popover, Transition } from "@headlessui/react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About us", href: "/about" },
-  { name: "Membership", href: "/membership" },
+  { name: "Programs", href: "/programs" },
   { name: "Conference", href: "/conference" },
   { name: "Workshops", href: "/workshops" },
   { name: "Staff", href: "/staff" },
@@ -16,7 +16,7 @@ const navigation = [
 
 export default function Toolbar() {
   return (
-    <div className="sticky bg-white p-5 md:py-10 z-10 top-0">
+    <div className="sticky bg-white px-5 py-2 md:p-5 md:py-10 z-10 top-0">
       <div className="mx-auto max-w-7xl">
         <Popover>
           <div className="relative">
@@ -30,7 +30,7 @@ export default function Toolbar() {
                     <Link href="/" className="flex w-full space-x-2 items-center">
                       <Image
                         alt="Your Company"
-                        className="h-16 sm:h-24 w-auto sm:h-24"
+                        className="h-10 sm:h-24 w-auto "
                         src="/logo.png"
                         width={50}
                         height={50}

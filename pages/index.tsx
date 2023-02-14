@@ -82,7 +82,7 @@ export default function Index() {
 
       <section className="bg-gray-50">
         <div className="max-w-7xl mx-auto py-10">
-          <div className="md:flex md:space-x-10 justify-between">
+          <div className="md:flex md:space-x-10 justify-between px-3 md:px-0">
             {items.map((x, i) => (
               <Link href={x.href} key={i} className="p-3 md:p-0">
                 <div className="max-w-sm cursor-pointer bg-white h-full rounded-xl overflow-hidden shadow-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-300">
