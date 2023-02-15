@@ -1,5 +1,4 @@
 import Carousel from "@/components/carousel/carousel";
-import Icon from "@/components/Icon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,25 +14,21 @@ export default function Index() {
   const items = [
     {
       title: "The 50 th Anniversary",
-      subtitle: `Modern robust statistical methods for sound decision-making and the expanding boundaries of statistics.`,
+      subtitle: `The 50th Anniversary of the Department of Statistics, Addis Ababa University, several Scientists are expected to attend the event.`,
       img: "",
-      href:"conference"
+      href: "conference",
     },
     {
-      title: "20000+ Students Graduated",
-      subtitle: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Blanditiis commodi cum cupiditate ducimus, fugit harum id
-      necessitatibus.`,
+      title: "Three type of Programs",
+      subtitle: `Programs currently offered by the Department of Statistics. Bachelor of Science, Master of Science, and Doctor of Philosophy.`,
       img: "",
-      href:"two"
+      href: "/programs",
     },
     {
-      title: "50+ years of experience",
-      subtitle: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Blanditiis commodi cum cupiditate ducimus, fugit harum id
-      necessitatibus.`,
+      title: "25+ Academic Staff",
+      subtitle: `Dr. Bedilu Alamirie is the Chairman of the Department of Statistics. Other staffcs are Adjunct staff, echnical staff, Support staff.`,
       img: "",
-      href:"three"
+      href: "/staff",
     },
   ];
 
@@ -44,30 +39,31 @@ export default function Index() {
           <div className="md:flex md:space-x-10 items-center justify-between">
             <div className="md:w-1/2 px-3 md:px-0">
               <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">
-                Lorem Ipsum doler <span className="text-indigo-600">Lorem</span>
+                Department of{" "}
+                <span className="text-indigo-600">Statistics</span>
               </h2>
               <p className="mt-2 text-sm text-gray-500 md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Blanditiis commodi cum cupiditate ducimus, fugit harum id
-                necessitatibus odio quam quasi, quibusdam rem tempora
-                voluptates. Cumque debitis dignissimos id quam vel!
+                We are proud to have been providing high-quality statistical
+                education to students for the past 50 years.
               </p>
               <p className="mt-2 text-sm text-gray-500 md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Blanditiis commodi cum cupiditate ducimus, fugit harum id
-                necessitatibus odio quam quasi, quibusdam rem tempora
-                voluptates. Cumque debitis dignissimos id quam vel!
+                Our department offers comprehensive programs for students at
+                every level of study, from B.Sc to M.Sc and PhD. Whether you are
+                just beginning your statistical journey or are looking to
+                further your knowledge in this field, our experienced faculty
+                and cutting-edge curriculum will provide you with the tools and
+                skills needed to excel in the ever-evolving world of statistics
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
                 <Link
                   className="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
-                  href="#"
+                  href="/contact"
                 >
                   Get Started
                 </Link>
                 <Link
                   className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
-                  href="#"
+                  href="/about"
                 >
                   Learn More
                 </Link>
@@ -90,9 +86,7 @@ export default function Index() {
                     <div className="font-bold text-xl mb-2">{x.title}</div>
                     <p className="text-gray-700 text-base">
                       {x.subtitle}
-                      <span className="pl-2 text-green-600">
-                        Read more
-                      </span>
+                      <span className="pl-2 text-green-600">Read more</span>
                     </p>
                   </div>
                 </div>
