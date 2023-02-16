@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import MajorCompulsoryCourses from "./components/MajorCompulsoryCourses";
 import Objectives from "./components/objectives";
 import MainPrograms from "./components/programs";
-import Requirements from "./components/requirements";
 
 export default function Programs() {
   const titles = [
     "Department of Statistics Program Objectives:",
-    'Admission Requirements:',
     "Programs currently offered by the Department of Statistics",
     "Major Compulsory Courses",
     "Major Elective Courses",
@@ -34,7 +32,6 @@ export default function Programs() {
                 <Objectives/>
                 <MainPrograms/>
                 <MajorCompulsoryCourses/>
-                <Requirements/>
                 </section>
                 <section className="hidden md:block w-full max-w-[350px]">
                   <div className="border border-gray-100 rounded ">
@@ -49,7 +46,7 @@ export default function Programs() {
                       >
                         <Link
                         href={`#${i}`}
-                          className={`hover:text-green-500 text-left font-semibold text-sm ${
+                          className={`hover:text-green-600 text-left font-semibold text-sm ${
                             currentLink === i
                               ? "text-green-600"
                               : "text-gray-500"
