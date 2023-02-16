@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import MajorCompulsoryCourses from "./components/MajorCompulsoryCourses";
 import Objectives from "./components/objectives";
 import MainPrograms from "./components/programs";
 
@@ -21,7 +22,7 @@ export default function Programs() {
   const [currentLink, setCurrentLink] = useState(0);
 
   return (
-    <div>
+    <div className="h-full pb-32">
       <section>
         <div className="px-3 md:p-0 bg-white">
           <div className="container m-auto px-2 text-gray-600">
@@ -30,6 +31,7 @@ export default function Programs() {
                 <section className="w-full">
                 <Objectives/>
                 <MainPrograms/>
+                <MajorCompulsoryCourses/>
                 </section>
                 <section className="hidden md:block w-full max-w-[350px]">
                   <div className="border border-gray-100 rounded ">
