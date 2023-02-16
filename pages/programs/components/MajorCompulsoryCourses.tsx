@@ -236,9 +236,9 @@ export default function MajorCompulsoryCourses() {
           ],
         },
         { items: ["Math 1011", "Mathematics for Natural Science", 3, 5, ""] },
-        {items:['MCiE 1012',	'Moral and Civic Education',	2,	4,'']},
-        {items:['SpSc 1011',	'Physical Fitness',	'P/F','',''	 ]},
-        {items:['Anth 1012',	'Social Anthropology',	2,	4,'']}
+        { items: ["MCiE 1012", "Moral and Civic Education", 2, 4, ""] },
+        { items: ["SpSc 1011", "Physical Fitness", "P/F", "", ""] },
+        { items: ["Anth 1012", "Social Anthropology", 2, 4, ""] },
       ],
     },
   ];
