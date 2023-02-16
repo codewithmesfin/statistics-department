@@ -1,16 +1,15 @@
 import React from "react";
 
 export default function MajorCompulsoryCourses() {
-  const columns = [
-    "Course Code",
-    "Course Title",
-    "Credit Hour",
-    "ECTS",
-    "Prerequisite Course Code",
-  ];
-
-  const bscPrograms = [
+  const programs = [
     {
+      columns: [
+        "Course Code",
+        "Course Title",
+        "Credit Hour",
+        "ECTS",
+        "Prerequisite Course Code",
+      ],
       title: "Major Compulsory Courses",
       rows: [
         {
@@ -145,6 +144,13 @@ export default function MajorCompulsoryCourses() {
     },
 
     {
+      columns: [
+        "Course Code",
+        "Course Title",
+        "Credit Hour",
+        "ECTS",
+        "Prerequisite Course Code",
+      ],
       title: "Major Elective Courses",
       rows: [
         {
@@ -168,6 +174,13 @@ export default function MajorCompulsoryCourses() {
     },
 
     {
+      columns: [
+        "Course Code",
+        "Course Title",
+        "Credit Hour",
+        "ECTS",
+        "Prerequisite Course Code",
+      ],
       title: "Supportive Course",
 
       rows: [
@@ -193,6 +206,13 @@ export default function MajorCompulsoryCourses() {
       total: [31, 52],
     },
     {
+      columns: [
+        "Course Code",
+        "Course Title",
+        "Credit Hour",
+        "ECTS",
+        "Prerequisite Course Code",
+      ],
       title: "Common (General Education Courses)",
       total: [44, 76],
       rows: [
@@ -241,70 +261,304 @@ export default function MajorCompulsoryCourses() {
         { items: ["Anth 1012", "Social Anthropology", 2, 4, ""] },
       ],
     },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      leading: "M.Sc. in Statistics Program",
+      desc: "The duration of study for students in the M.Sc. program is two years for full-time students and three years for evening/extension students.",
+      title: "Course Requirement for Actuarial Statistics Stream",
+      subtitle: "Core Courses",
+      rows: [
+        {
+          items: [
+            "Stat 671",
+            "Advanced Statistical Theory of Distributions",
+            3,
+            7,
+          ],
+        },
+        { items: ["Stat 672", "Advanced Statistical Inference", 3, 7] },
+        { items: ["Stat 675", "Linear Statistical Models", 4, 9] },
+        { items: ["Stat 623", "Survival Data Analysis", 3, 7] },
+        { items: ["Stat 611", "Actuarial Modeling I", 3, 7] },
+        { items: ["Stat 612", "Actuarial Modeling II", 3, 7] },
+        { items: ["Stat 681", "Analysis of Categorical Data", 3, 7] },
+        { items: ["Stat 773", "Project Writing & Data Wrangling", 1, 2] },
+        { items: ["Stat 789", "M.Sc. Thesis", 6, 14] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Electives",
+      subtitle: "A minimum of two of the following courses",
+      rows: [
+        {
+          items: ["Stat 682", "Nonparametric Methods", 3, 7],
+        },
+        { items: ["Stat 673", "Multivariate Methods", 3, 7] },
+        { items: ["Stat 777", "Design of Experiments", 3, 7] },
+        { items: ["Stat 779", "Time Series Analysis", 3, 7] },
+        { items: ["Stat 783", "Analysis of Longitudinal Data", 3, 7] },
+        { items: ["Stat 785", "Bayesian Data Analysis", 3, 7] },
+        { items: ["Stat 741", "Stochastic Modelling for Actuaries", 3, 7] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Course Requirement for No concentration Statistics Stream    ",
+      subtitle: "Core Courses",
+      rows: [
+        {
+          items: [
+            "Stat 671",
+            "Advanced Statistical Theory of Distributions",
+            3,
+            7,
+          ],
+        },
+        { items: ["Stat 672", "Advanced Statistical Inference", 3, 7] },
+        { items: ["Stat 675", "Linear Statistical Models", 4, 9] },
+        { items: ["Stat 681", "Analysis of Categorical Data", 3, 7] },
+        { items: ["Stat 773", "Project Writing & Data Wrangling", 1, 2] },
+        { items: ["Stat 789", "M.Sc. thesis", 6, 14] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Electives",
+      subtitle: "A minimum of two of the following courses",
+      rows: [
+        { items: ["Stat 682", "Nonparametric Methods", 3, 7] },
+        { items: ["Stat 673", "Multivariate Methods", 3, 7] },
+        { items: ["Stat 777", "Design of Experiments", 3, 7] },
+        { items: ["Stat 779", "Time Series Analysis", 3, 7] },
+        { items: ["Stat 783", "Analysis of Longitudinal Data", 3, 7] },
+        { items: ["Stat 785", "Bayesian Data Analysis", 3, 7] },
+        { items: ["Stat 741", "Stochastic Modelling for Actuaries", 3, 7] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Course Requirement for No concentration Statistics Stream",
+      subtitle: "Core Courses",
+      rows: [
+        {
+          items: [
+            "Stat 671",
+            "Advanced Statistical Theory of Distributions",
+            3,
+            7,
+          ],
+        },
+        { items: ["Stat 672", "Advanced Statistical Inference", 3, 7] },
+        { items: ["Stat 675", "Linear Statistical Models", 4, 9] },
+        { items: ["Stat 681", "Analysis of Categorical Data", 3, 7] },
+        { items: ["Stat 773", "Project Writing & Data Wrangling", 1, 2] },
+        { items: ["Stat 789", "M.Sc. thesis", 6, 14] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Electives",
+      subtitle: "A minimum of five of the following courses",
+      rows: [
+        { items: ["Stat 682", "Nonparametric Methods", 3, 7] },
+        { items: ["Stat 623", "Survival Data Analysis", 3, 7] },
+        { items: ["Stat 673", "Multivariate Methods", 3, 7] },
+        { items: ["Stat 777", "Design of Experiments", 3, 7] },
+        { items: ["Stat 779", "Time Series Analysis", 3, 7] },
+        { items: ["Stat 783", "Analysis of Longitudinal Data", 3, 7] },
+        { items: ["Stat 731", "Advanced Applied Econometrics", 3, 7] },
+        { items: ["Stat 785", "Bayesian Data Analysis", 3, 7] },
+        {
+          items: ["Stat 677", "Stochastic Models in Operations Research", 3, 7],
+        },
+        { items: ["Stat 743", "Spatial Statistics", 3, 7] },
+        { items: ["Stat 774", "Special Topics in Statistics", 3, 7] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Course Requirement for Biostatistics Stream",
+      subtitle: "Core Courses",
+      rows: [
+        {
+          items: ["Stat 622", "Epidemiological Methods", 3, 7],
+        },
+        {
+          items: [
+            "Stat 671",
+            "Advanced Statistical Theory of Distributions",
+            3,
+            7,
+          ],
+        },
+        { items: ["Stat 672", "Advanced Statistical Inference", 3, 7] },
+        { items: ["Stat 675", "Linear Statistical Models", 4, 9] },
+        { items: ["Stat 681", "Analysis of Categorical Data", 3, 7] },
+        { items: ["Stat 623", "Survival Data Analysis", 3, 7] },
+        {
+          items: ["Stat 721", "	Design and Analysis of Clinical Trial", 3, 7],
+        },
+        { items: ["Stat 773", "Project Writing & Data Wrangling", 1, 2] },
+        { items: ["Stat 789", "M.Sc. thesis", 6, 14] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour", "ECTS"],
+      title: "Electives",
+      subtitle: "A minimum of two of the following courses",
+      rows: [
+        { items: ["Stat 682", "Nonparametric Methods", 3, 7] },
+        { items: ["Stat 673", "Multivariate Methods", 3, 7] },
+        { items: ["Stat 783", "Analysis of Longitudinal Data", 3, 7] },
+        { items: ["Stat 785", "Bayesian Data Analysis", 3, 7] },
+        { items: ["Stat 743", "Spatial Statistics", 3, 7] },
+        { items: ["Stat 787", "Statistical Genetics", 3, 7] },
+        { items: ["Stat 774", "Special Topics in Statistics", 3, 7] },
+      ],
+    },
+    {
+      title: " PhD Program in Statistics",
+      subtitle: "General Provision",
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour"],
+      subtitle: "Compulsory Courses for all Streams",
+      desc: `The Ph. D. program will take three to four years but should not be extended beyond six years. 
+      The program has two options. The Departmental Graduate Committee (DGC) shall place a candidate to one of the
+       options based on critical assessment of academic records, teaching and research experience of the candidate.
+       Option I: course work and research and Option II: research only. A candidate in option 1 is required to take a minimum of 17 credit hours of course work including seminars and current topics.`,
+      rows: [
+        {
+          items: ["Stat 702", "Advanced Theory of Statistical Inference", 3],
+        },
+        { items: ["Stat 799", "Seminar on Current Topics I", 1] },
+        { items: ["Stat 799", "Seminar on Current Topics II", 1] },
+        { items: ["Stat 803", "Doctoral Dissertation", ""] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour"],
+      desc: "In addition, students take at least four courses in one of the following areas of concentration.",
+      subtitle: "Biostatistics",
+      rows: [
+        { items: ["Stat 701", "Advanced Probability and Measure Theory", 3] },
+        { items: ["Stat 723", "Mixed Models", 3] },
+        { items: ["Stat 732", "Advanced Time Series Analysis", 3] },
+        { items: ["Stat 733", "Advanced Multivariate Analysis", 3] },
+        {
+          items: ["Stat 761", "Asymptotic Methods in Statistical Inference", 3],
+        },
+        { items: ["Stat 762", "Advanced Bayesian Analysis", 3] },
+        { items: ["Stat 763", "Advanced Nonparametric Statistics", 3] },
+        { items: ["Stat 771", "Stochastic Processes", 3] },
+      ],
+    },
+    {
+      columns: ["Course Code", "Course Title", "Credit Hour"],
+      subtitle: "Applied Statistics",
+      rows: [
+        { items: ["Stat 704", "Spatial Econometrics", 3] },
+        { items: ["Stat 705", "Econometric Time Series Analysis", 3] },
+        { items: ["Stat 722", "Generalized Linear Models", 3] },
+        { items: ["Stat 723", "Mixed Models", 3] },
+        {items:['Stat 731',	'Advanced Econometrics',	3]},
+        {items:['Stat 732',	'Advanced Time Series Analysis',	3]},
+        {items:['Stat 733',	'Advanced Multivariate Analysis',	3]},
+        {items:['Stat 734',	'Environmental and Spatial Statistics',	3]},
+        {items:['Stat 741',	'Advanced Design of Experiments',	3]},
+        {items:['Stat 745',	'Bayesian Econometrics',	3]},
+        {items:['Stat 752',	'Advanced Categorical Data Analysis',	3]},
+        {items:['Stat 762',	'Advanced Bayesian Analysis',	3]}
+      ],
+    },
   ];
 
   return (
     <div id="2">
-      {bscPrograms.map((program, k) => (
+      {programs.map((program, k) => (
         <div key={k} className="py-5">
-          <h1 className="text-lg md:text-xl font-bold py-3">{program.title}</h1>
+          {program.leading && (
+            <h1 className="text-lg md:text-xl font-bold py-3">
+              {program.leading}
+            </h1>
+          )}
+
+          {program.desc && (
+            <p className="text-sm text-gray-600"> {program.desc} </p>
+          )}
+          <h1 className="text-sm md:text-lg font-bold py-3">{program.title}</h1>
+          {program.subtitle && (
+            <h1 className="text-sm md:text-md font-bold py-2">
+              {program.subtitle}
+            </h1>
+          )}
           <div className="flex flex-col max-w-5xl">
-            <div className="overflow-x-auto shadow-xs border border-gray-200 sm:rounded-lg">
-              <div className="inline-block min-w-full align-middle">
-                <div className="overflow-hidden ">
-                  <table className="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
-                    <thead className="">
-                      <tr>
-                        {columns.map((x, i) => (
-                          <th
-                            key={i}
-                            scope="col"
-                            className={`py-2 ${
-                              i + 1 < columns.length ? "border-r" : ""
-                            } px-4`}
-                          >
-                            <div className="flex text-xs items-center font-semibold">
-                              {x}
-                            </div>
-                          </th>
-                        ))}
-                      </tr>
-                      {program.rows.map((y, j) => (
-                        <tr key={j} className={`hover:bg-gray-100 border-t`}>
-                          {y.items.map((x, i) => (
-                            <td
-                              key={i}
-                              className={`py-2 px-4 ${
-                                i + 1 < y.items.length ? "border-r" : ""
-                              } text-xs text-left`}
-                            >
-                              {x}
-                            </td>
-                          ))}
+            {program.rows && (
+              <div className="overflow-x-auto shadow-xs border border-gray-200 sm:rounded-lg">
+                <div className="inline-block min-w-full align-middle">
+                  <div className="overflow-hidden ">
+                    <table className="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
+                      <thead className="">
+                        <tr>
+                          {program.columns &&
+                            program.columns.map((x, i) => (
+                              <th
+                                key={i}
+                                scope="col"
+                                className={`py-2 ${
+                                  i + 1 < program.columns.length
+                                    ? "border-r"
+                                    : ""
+                                } px-4`}
+                              >
+                                <div className="flex text-xs items-center font-semibold">
+                                  {x}
+                                </div>
+                              </th>
+                            ))}
                         </tr>
-                      ))}
-                      {program.total && (
-                        <tr className="border-t">
-                          <td className="py-2 px-4 text-xs text-left font-semibold ">
-                            Total
-                          </td>
-                          <td className="border-r"></td>
-                          {program.total.map((t) => (
-                            <td
-                              key={t}
-                              className="border-r font-semibold text-xs py-2 px-4"
+                        {program.rows &&
+                          program.rows.map((y, j) => (
+                            <tr
+                              key={j}
+                              className={`hover:bg-gray-100 border-t`}
                             >
-                              {t}{" "}
-                            </td>
+                              {y.items.map((x, i) => (
+                                <td
+                                  key={i}
+                                  className={`py-2 px-4 ${
+                                    i + 1 < y.items.length ? "border-r" : ""
+                                  } text-xs text-left`}
+                                >
+                                  {x}
+                                </td>
+                              ))}
+                            </tr>
                           ))}
-                          <td></td>
-                        </tr>
-                      )}
-                    </thead>
-                  </table>
+                        {program.total && (
+                          <tr className="border-t">
+                            <td className="py-2 px-4 text-xs text-left font-semibold ">
+                              Total
+                            </td>
+                            <td className="border-r"></td>
+                            {program.total.map((t) => (
+                              <td
+                                key={t}
+                                className="border-r font-semibold text-xs py-2 px-4"
+                              >
+                                {t}{" "}
+                              </td>
+                            ))}
+                            <td></td>
+                          </tr>
+                        )}
+                      </thead>
+                    </table>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       ))}

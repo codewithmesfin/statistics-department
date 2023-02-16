@@ -7,7 +7,7 @@ export default function MainPrograms() {
     "Doctor of Philosophy (Ph.D.) Degree in Statistics (Applied Statistics, Bio-Statistics or Mathematical Statistics)",
   ];
   return (
-    <div id="1">
+    <div id="2">
       <div>
         <h1 className="text-lg md:text-xl font-bold py-3">
           Programs currently offered by the Department of Statistics
