@@ -12,7 +12,7 @@ export default function Requirements() {
     <div className="mx-auto max-w-7xl pb-16">
       <div className="py-16">
         <h1 className="text-xl md:text-6xl text-center font-bold py-2">
-          Admission Requirements:
+          Admission Requirements
         </h1>
       </div>
       <div className="md:flex justify-between md:space-x-20">
