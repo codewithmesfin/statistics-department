@@ -151,7 +151,7 @@ export default function Index() {
               </div>
               <div
                 className="w-full md:w-1/2 p-3 md:p-0"
-                data-aos="fade-left"
+                data-aos="flip-left"
                 data-aos-duration="3000"
               >
                 <h1 className="text-3xl py-3 font-extrabold">About us</h1>
