@@ -3,18 +3,22 @@ import React from "react";
 import Icon from "../Icon";
 
 export default function TopHeader() {
+
   const leftItems = [
     {
       title: "Addis Ababa, Ethiopia",
-      icon: <Icon path={"location"}/>,
+      icon: <Icon path={"location"} />,
+      href:"https://goo.gl/maps/rGFtGPt8mmXHmS1y8"
     },
     {
-      title: "info@statistics.aau.edu.et",
+      title: "statistics_cns@aau.edu.et",
       icon:<Icon  path="email"/>,
+      href:"mailto:statistics_cns@aau.edu.et"
     },
     {
-      title: "+251911522902",
+      title: "+251 92 187 7301",
       icon:<Icon path="phone" />,
+      href:"tel:+251921877301"
     },
   ];
   const rightItems= [
@@ -38,19 +42,19 @@ export default function TopHeader() {
   ]
 
   return (
-    <header className="bg-green-600 p-3 w-full ">
+    <header className="bg-blue-600 p-3 w-full ">
       <div className="mx-auto max-w-7xl">
         <div className="flex justify-between">
           <div className="flex space-x-10">
             {leftItems.map((x, i) => (
-              <Link href="/aa" key={i} className="flex space-x-2 text-white">
+              <Link href={x.href} key={i} className="flex space-x-2 text-sm text-white">
                 {x.icon}
-                {x.title}
+                <span className="px-1">{x.title}</span>
               </Link>
             ))}
           </div>
           <div className="flex space-x-6">
-            <div className="text-white flex space-x-2">
+            <div className="text-white text-sm flex space-x-2">
               <Icon path="time"/>
               <p>Office Hours: 8:00 AM – 5:00 PM</p>
             </div>

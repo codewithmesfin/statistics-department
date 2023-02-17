@@ -7,9 +7,9 @@ import { Popover, Transition } from "@headlessui/react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About us", href: "/about" },
+  { name: "Conference", href: "/conference" },
   { name: "Programs", href: "/programs" },
   {name:"Admissions",href:"/admissions"},
-  { name: "Conference", href: "/conference" },
   { name: "Staff", href: "/staff" },
   { name: "Contact us", href: "/contact" },
 ];
@@ -22,7 +22,7 @@ export default function Toolbar() {
           <div className="relative">
             <div className="flex flex items-center justify-between">
               <nav
-                className="relative w-full flex items-center justify-between sm:h-10 "
+                className="relative w-full flex items-center justify-between sm:h-10"
                 aria-label="Global"
               >
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
@@ -39,7 +39,7 @@ export default function Toolbar() {
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <p className="text-xs md:text-xl font-extrabold text-green-600">
+                        <p className="text-xs md:text-xl font-extrabold text-blue-600">
                           Department of Statistics
                         </p>
                       </div>
@@ -51,7 +51,7 @@ export default function Toolbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-gray-500 hover:text-green-600"
+                      className="text-gray-500 hover:text-blue-600"
                     >
                       {item.name}
                     </Link>
@@ -59,7 +59,7 @@ export default function Toolbar() {
                 </div>
               </nav>
               <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-green-600 hover:bg-gray-100 hover:text-gray-500 focus:outline-none ">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-blue-600 hover:bg-gray-100 hover:text-gray-500 focus:outline-none ">
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -96,7 +96,7 @@ export default function Toolbar() {
                         <p className="text-sm md:text-xl">
                           Addis Ababa University
                         </p>
-                        <p className="text-xs md:text-xl font-extrabold text-green-600">
+                        <p className="text-xs md:text-xl font-extrabold text-blue-600">
                           Department of Statistics
                         </p>
                       </div>

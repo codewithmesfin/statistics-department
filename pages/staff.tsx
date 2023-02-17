@@ -19,7 +19,7 @@ export default function Staffs() {
   return (
     <div className="mx-auto max-w-7xl pb-16">
       <div className="py-16">
-        <h1 className="text-6xl md:text-8xl font-extrabold text-center pt-6 text-green-600">
+        <h1 className="text-6xl md:text-8xl font-extrabold text-center pt-6 text-blue-600">
           Staff
         </h1>
 

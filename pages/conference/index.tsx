@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Conference() {
   const keys = [
@@ -71,15 +71,40 @@ export default function Conference() {
 
   return (
     <div className="pb-16">
-      <section>
-        <div className="pt-4 bg-white">
-          <div className="container m-auto px-2  text-gray-600">
-            <div className="w-full mx-auto p-10 ">
-              <h2 className="text-2xl text-center text-gray-900 font-extrabold md:text-6xl">
+      <section className="py-10 bg-[url('/images/bg.webp')] bg-cover">
+        <div className="mx-auto max-w-7xl md:p-3">
+          <div className="md:flex justify-center items-center md:space-x-10">
+            <div
+              className="w-full  md:w-1/2 mx-auto p-10"
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <p className="text-2xl leading-10 text-left text-white font-extrabold md:text-6xl">
                 The 50th Anniversary of the Department of Statistics, Addis
-                Ababa University
-              </h2>
+                Ababa University.
+              </p>
             </div>
+
+            <div className="w-full md:w-1/2"   data-aos="flip-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">
+              <Image
+                src="/images/man1.png"
+                alt="image"
+                loading="lazy"
+                width={200}
+                height={200}
+                className="w-full h-full max-w-[400px] max-h-[600px] rounded object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="bg-white">
+          <div className="container m-auto px-2  text-gray-600">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="w-full md:w-1/2 shadow-xs rounded border border-gray-100">
                 <div className="bg-gray-100">
@@ -155,7 +180,7 @@ export default function Conference() {
                   certificate for candidates sponsored by governments of this
                   region.
                 </p>
-                <Link href="/conference/background" className="text-green-600">
+                <Link href="/conference/background" className="text-blue-600">
                   Read more ...
                 </Link>
               </div>
@@ -207,7 +232,10 @@ export default function Conference() {
                 <div className="ml-6">
                   <ul>
                     {objectives.map((x, i) => (
-                      <li key={i} className="list-disc text-gray-600"> {x}</li>
+                      <li key={i} className="list-disc text-gray-600">
+                        {" "}
+                        {x}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -280,7 +308,7 @@ export default function Conference() {
                             <tr
                               key={i}
                               className={`hover:bg-gray-100  ${
-                                i % 2 === 0 ? "bg-green-100" : ""
+                                i % 2 === 0 ? "bg-blue-100" : ""
                               }`}
                             >
                               <td className="py-2 px-4 text-xs text-left">

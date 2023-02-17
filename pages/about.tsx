@@ -97,7 +97,7 @@ export default function about() {
                     <div className="font-bold text-xl mb-2">{x.title}</div>
                     <p className="text-gray-700 text-base">
                       {x.subtitle}
-                      <span className="pl-2 text-green-600">Read more</span>
+                      <span className="pl-2 text-blue-600">Read more</span>
                     </p>
                   </div>
                 </div>

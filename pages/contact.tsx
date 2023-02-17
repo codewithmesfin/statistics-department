@@ -7,7 +7,7 @@ export default function contact() {
         <div className="w-full md:w-1/2">
           <section className="py-20 px-3 md:px-0">
             <div className="mx-auto">
-              <h1 className="text-6xl md:text-8xl font-extrabold text-center pt-6 text-green-600">
+              <h1 className="text-6xl md:text-8xl font-extrabold text-center pt-6 text-blue-600">
                 Contact us
               </h1>
 

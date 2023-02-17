@@ -11,7 +11,7 @@ export default function Conference() {
             <div className="w-full">
               <Link
                 href="/conference"
-                className="text-green-600 flex items-center py-5"
+                className="text-blue-600 flex items-center py-5"
               >
                 <Icon path="back" />
                 <span className="pl-5">Conference Note</span>

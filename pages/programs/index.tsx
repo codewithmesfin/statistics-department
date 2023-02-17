@@ -46,9 +46,9 @@ export default function Programs() {
                       >
                         <Link
                         href={`#${i}`}
-                          className={`hover:text-green-600 text-left font-semibold text-sm ${
+                          className={`hover:text-blue-600 text-left font-semibold text-sm ${
                             currentLink === i
-                              ? "text-green-600"
+                              ? "text-blue-600"
                               : "text-gray-500"
                           }`}
                         >
