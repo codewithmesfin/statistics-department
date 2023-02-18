@@ -73,7 +73,7 @@ export default function Staffs() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl pb-16">
+    <div className="mx-auto max-w-7xl px-5 md:px-0 pb-16">
       <div className="py-3">
         <div className="py-16">
           <h1 className="text-6xl md:text-8xl font-extrabold text-center pt-6 text-blue-600">
