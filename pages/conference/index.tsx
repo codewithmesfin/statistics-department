@@ -417,7 +417,7 @@ export default function Conference() {
               </div>
             </div>
             <div className="w-full">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {reasons.map((x, i) => (
                   <div key={i} className="shadow-xl pl-10 pt-10 bg-white">
                     <div className="flex justify-between">
@@ -451,7 +451,7 @@ export default function Conference() {
       <section className="py-10">
         <div className="mx-auto max-w-7xl md:p-3">
           <div className="md:flex md:space-x-10">
-            <div className="w-full md:w-1/2 hidden md:block" data-aos="zoom-in-up" data-aos-duration="3000">
+            <div className="w-full md:w-1/2 hidden md:block" data-aos="zoom-in-left" data-aos-duration="3000">
               <Image
                 src="/images/aau.jpeg"
                 alt="image"
@@ -461,7 +461,7 @@ export default function Conference() {
                 className="w-full h-full rounded object-cover"
               />
             </div>
-            <div className="w-full md:w-1/2 md:py-6" data-aos="zoom-in-down" data-aos-duration="3000">
+            <div className="w-full md:w-1/2 md:py-6" >
               <div>
                 <h1 className="font-extrabold py-2  px-5 text-xl md:text-4xl">
                   1. Background
@@ -496,10 +496,10 @@ export default function Conference() {
         </div>
       </section>
 
-      <section className="md:py-10 md:pt-0" >
-        <div className="mx-auto max-w-7xl p-3" >
+      <section className="md:py-10 md:pt-0">
+        <div className="mx-auto max-w-7xl p-3">
           <div className="md:flex md:space-x-10">
-            <div className="w-full md:w-1/2 md:py-5" data-aos="fade-left" data-aos-duration="3000">
+            <div className="w-full md:w-1/2 md:py-5">
               <h1 className="font-extrabold py-2 text-xl md:text-4xl">
                 2. Theme
               </h1>
@@ -509,7 +509,7 @@ export default function Conference() {
               </p>
             </div>
 
-            <div className="w-full md:w-1/2 py-5 " data-aos="fade-right" data-aos-duration="3000">
+            <div className="w-full md:w-1/2 py-5 ">
               <h1 className="font-extrabold py-2 text-xl md:text-4xl">
                 3. Purpose
               </h1>
@@ -528,7 +528,7 @@ export default function Conference() {
       <section className="md:py-10 md:pt-0">
         <div className="mx-auto max-w-7xl p-3">
           <div className="md:flex md:space-x-10">
-            <div className="w-full md:w-1/2" data-aos="zoom-out-up" data-aos-duration="3000">
+            <div className="w-full md:w-1/2">
               <div>
                 <h1 className="font-extrabold py-2 text-xl md:text-4xl">
                   4. Objectives
@@ -567,7 +567,7 @@ export default function Conference() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2" data-aos="zoom-in-down" data-aos-duration="3000">
+            <div className="w-full md:w-1/2">
               <div className="w-full py-5">
                 <h1 className="font-extrabold py-2 text-xl md:text-4xl">
                   6. Conference Participants
