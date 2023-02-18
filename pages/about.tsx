@@ -30,7 +30,7 @@ export default function about() {
         <div className="py-16 bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 items-center lg:gap-12">
-              <div className="md:5/12 lg:w-5/12">
+              <div className="md:5/12 lg:w-5/12" data-aos="zoom-out-up" data-aos-duration="3000">
                 <Image
                   src="/images/about.png"
                   alt="image"
@@ -44,11 +44,11 @@ export default function about() {
                 <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                   Welcome to the Department of Statistics!
                 </h2>
-                <p className="mt-6 text-gray-600">
+                <p className="mt-6 text-gray-600"  data-aos="zoom-out-left" data-aos-duration="3000">
                   We are proud to have been providing high-quality statistical
                   education to students for the past 50 years.
                 </p>
-                <p className="mt-6 text-gray-600">
+                <p className="mt-6 text-gray-600"  data-aos="zoom-out-right" data-aos-duration="3000">
                   Our department offers comprehensive programs for students at
                   every level of study, from B.Sc to M.Sc and PhD. Whether you
                   are just beginning your statistical journey or are looking to
@@ -57,14 +57,14 @@ export default function about() {
                   and skills needed to excel in the ever-evolving world of
                   statistics.
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600" data-aos="zoom-out-left" data-aos-duration="3000">
                   Our approach to teaching emphasizes hands-on learning and
                   practical applications of statistical theory. We believe that
                   a deep understanding of statistical methods is crucial to
                   success in any field, from data analysis in the sciences to
                   business analytics and beyond.
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600" data-aos="zoom-out-down" data-aos-duration="3000">
                   Our faculty consists of renowned statisticians and
                   researchers, who are committed to mentoring students and
                   providing them with the knowledge and skills needed to become
@@ -73,7 +73,7 @@ export default function about() {
                   careers and make meaningful contributions to the field of
                   statistics.
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600" data-aos="zoom-out-up" data-aos-duration="3000">
                   Join us on this exciting statistical journey, and become a
                   part of a community of passionate and driven statisticians.
                   Whether you are interested in pursuing a career in academia,

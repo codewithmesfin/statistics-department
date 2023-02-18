@@ -188,6 +188,20 @@ export default function Index() {
             </div>
           </div>
         </section>
+
+        {/* <section >
+          <div className="max-w-7xl mx-auto py-10">
+         <div>
+          <h1 className="text-xl md:text-6xl font-extrabold text-center text-blue-600">Senior Staff</h1>
+         </div>
+         <div>
+          <div className="shadow-xl rounded border p-10">
+            fg
+          </div>
+         </div>
+          </div>
+        </section> */}
+
       </div>
     </>
   );
