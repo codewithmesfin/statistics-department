@@ -30,7 +30,7 @@ export default function about() {
         <div className="py-16 bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 items-center lg:gap-12">
-              <div className="md:5/12 lg:w-5/12" data-aos="zoom-out-up" data-aos-duration="3000">
+              <div className="md:5/12 lg:w-5/12" >
                 <Image
                   src="/images/about.png"
                   alt="image"
@@ -38,13 +38,14 @@ export default function about() {
                   width={200}
                   height={200}
                   className="w-full h-full"
+                  data-aos="zoom-out-up" data-aos-duration="3000"
                 />
               </div>
               <div className="md:7/12 lg:w-6/12">
                 <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                   Welcome to the Department of Statistics!
                 </h2>
-                <p className="mt-6 text-gray-600"  data-aos="zoom-out-left" data-aos-duration="3000">
+                <p className="mt-6 text-gray-600"  >
                   We are proud to have been providing high-quality statistical
                   education to students for the past 50 years.
                 </p>
